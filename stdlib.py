@@ -19,6 +19,7 @@ def prompt(output, prompt=Prompt.Alert):
     if(prompt == Prompt.Alert):
         output += " Press [Enter] to continue: "
         response = input(output)
+        return True
 
     elif(prompt == Prompt.Confirm):
         output += " [Y/N]: "
